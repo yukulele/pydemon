@@ -1,30 +1,40 @@
-##What is pydemon
+## What is pydemon
 
 Relaunch your script when change detected in your directory.
 
-##How to install
- 
-		$ sudo pip install pydemon
+## How to install
 
-##How to use
+```
+$ sudo pip install pydemon
+```
 
-		$ pydemon yours.py
-		or
-		$ pydemon 'bash script'
-		or
-		$ pydemon script.sh
+## How to use
 
-##How to ignore file such as ".swp"
+```
+$ pydemon yours.py
+```
+or
+```
+$ pydemon 'bash script'
+```
+or
+```
+$ pydemon script.sh
+```
 
-		$ vi .pydemon.dat
-		
-		add your ignore pattern to "ignore_postfix" like below
-		
-		{
-			"ignore_postfix": [
-				".swp", 
-				".log"
-			],
-			"run_count": 16
-		}
+## How to ignore file such as ".swp"
 
+```
+$ vi .pydemon.dat
+```
+add your ignore pattern to "ignore_postfix" like below
+
+```json
+{
+	"ignore_postfix": [
+		".swp", 
+		".log"
+	],
+	"run_count": 16
+}
+```
